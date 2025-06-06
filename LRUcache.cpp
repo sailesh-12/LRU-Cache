@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//class Definition
+
 class LRUcache{
     private :
     struct Node{
@@ -9,7 +11,7 @@ class LRUcache{
         struct Node *prev;
         struct Node *next;
     }*head=NULL,*tail=NULL;
-    map<int,Node*> mpp;
+    map<int,Node*> mpp;  //Hashing + DLL
     int capacity;
 
     public:
